@@ -21,10 +21,14 @@ is_outlier <- function(y, x, th = 10) {
 
 #' Robust scale using median and mad per bin
 #'
+#' Put the values in \code{y} in bins based on the values in \code{x} and the
+#' breaks defined in \code{breaks}. Apply robust scaling to \code{y} per bin.
+#'
+#' @param y Numeric vector
 #' @param x Numeric vector
 #' @param breaks Numeric vector of breaks
 #'
-#' @return Numeric vector of scaled score
+#' @return Numeric vector of scaled values
 #'
 #' @importFrom stats aggregate
 #'

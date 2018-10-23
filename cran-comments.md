@@ -1,7 +1,8 @@
 ## Test environments
 * macOS Sierra 10.12.6, R 3.5.0
 * Ubuntu 18.04 LTS, R 3.4.4
-* devtools::build_win()
+* devtools::build_win(version = "R-release") - R version 3.5.1 (2018-07-02)
+* devtools::build_win() - using R Under development (unstable) (2018-10-21 r75476)
 
 ## R CMD check results
 

@@ -1,13 +1,12 @@
 Package: sctransform
 Type: Package
 Title: Variance Stabilizing Transformations for Single Cell UMI Data
-Version: 0.0.0.900
+Version: 0.1.0
 Authors@R: person(given = 'Christoph', family = 'Hafemeister', email = 'chafemeister@nygenome.org', role = c('aut', 'cre'), comment = c(ORCID = '0000-0001-6365-8254'))
 Description: A normalization method for single-cell UMI count data using a 
   variance stabilizing transformation. The transformation is based on a 
   negative binomial regression model with regularized parameters. As part of the
-  same regression framework, this package also provides functions for
-  differential gene expression testing, batch correction, and data
+  same regression framework, this package also provides functions for batch correction, and data
   correction/denoising.
 URL: https://github.com/ChristophH/sctransform
 BugReports: https://github.com/ChristophH/sctransform/issues
@@ -18,12 +17,8 @@ Depends: R (>= 2.10)
 Imports:
   MASS,
   Matrix,
-  parallel,
-  ggplot2,
-  reshape2,
-  gridExtra
+  parallel
 Suggests:
-  irlba,
   matrixStats,
   testthat
 RoxygenNote: 6.1.0
