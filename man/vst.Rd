@@ -91,8 +91,6 @@ If \code{method} is set to 'nb', coefficients and theta are estimated by a singl
 }
 
 \examples{
-\dontrun{
 vst_out <- vst(pbmc)
-}
 
 }

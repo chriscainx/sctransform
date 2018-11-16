@@ -59,6 +59,7 @@
 #' @importFrom MASS theta.ml glm.nb negative.binomial
 #' @importFrom stats glm ksmooth model.matrix as.formula approx density poisson var bw.SJ
 #' @importFrom utils txtProgressBar setTxtProgressBar capture.output
+#' @importFrom methods as
 #'
 #' @export
 #'
