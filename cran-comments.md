@@ -29,7 +29,7 @@ Yes, this is a new submission. No, these words are not mis-spelled.
 This test takes slightly more than 5s, but I think it is more important to 
 provide meaningful example data here than to shave off half a second.
 
-CRAN comments from a previous sumbission:
+CRAN comments from a previous submission:
 
 > Thanks. Is there some reference about the method you can add in the
 > Description field in the form Authors (year) <doi:.....>?
