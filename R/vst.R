@@ -63,9 +63,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
 #' vst_out <- vst(pbmc)
-#' }
 #'
 vst <- function(umi,
                 cell_attr = NULL,
