@@ -112,13 +112,9 @@ vst <- function(umi,
     if (!batch_var %in% colnames(cell_attr)) {
       stop('Batch variable not present in cell attributes; batch_var should be a column name of cell attributes')
     }
-    print("haha")
-    print(class(cell_attr))
-    print(str(cell_attr))
     cell_attr[[batch_var]] <- factor(cell_attr[[batch_var]])
     batch_levels <- levels(cell_attr[[batch_var]])
   }
-print('ho')
   # we will generate output for all genes detected in at least min_cells cells
   # but for the first step of parameter estimation we might use only a subset of genes
   genes_cell_count <- rowSums(umi > 0)
