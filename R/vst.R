@@ -112,8 +112,8 @@ vst <- function(umi,
     if (!batch_var %in% colnames(cell_attr)) {
       stop('Batch variable not present in cell attributes; batch_var should be a column name of cell attributes')
     }
-    cell_attr[, batch_var] <- as.factor(cell_attr[, batch_var])
-    batch_levels <- levels(cell_attr[, batch_var])
+    cell_attr[[batch_var]] <- factor(cell_attr[[batch_var]])
+    batch_levels <- levels(cell_attr[[batch_var]])
   }
 
   # we will generate output for all genes detected in at least min_cells cells
