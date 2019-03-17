@@ -113,6 +113,8 @@ vst <- function(umi,
       stop('Batch variable not present in cell attributes; batch_var should be a column name of cell attributes')
     }
     print("haha")
+    print(class(cell_attr))
+    print(str(cell_attr))
     cell_attr[[batch_var]] <- factor(cell_attr[[batch_var]])
     batch_levels <- levels(cell_attr[[batch_var]])
   }
