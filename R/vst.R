@@ -218,6 +218,10 @@ vst <- function(umi,
   res <- matrix(NA, length(genes), nrow(regressor_data_final), dimnames = list(genes, rownames(regressor_data_final)))
   for (i in 1:max_bin) {
     genes_bin <- genes[bin_ind == i]
+    print(head(model_pars_final[genes_bin, -1, drop=FALSE]))
+    print(str(model_pars_final[genes_bin, -1, drop=FALSE]))
+    print(head(regressor_data_final))
+    print(str(regressor_data_final))
     mu <- exp(tcrossprod(model_pars_final[genes_bin, -1, drop=FALSE], regressor_data_final))
     y <- as.matrix(umi[genes_bin, , drop=FALSE])
     if (return_dev_residuals) {
